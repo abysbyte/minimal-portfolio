@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: font1;
-  src: url(../public/font/Motterdam-K74zp.ttf);
+  src: url(/font/Motterdam-K74zp.ttf);
 }
 @font-face {
   font-family: font2;

@@ -6,18 +6,43 @@ import React, { useRef } from 'react'
 const About = () => {
 
   gsap.registerPlugin(ScrollTrigger)
+
   const imageDivRef = useRef(null);
+  const imageRef = useRef(null);
+
+  const imageArray = [
+    '/images/img2.jpg',
+    '/images/img3.jpg',
+    '/images/img4.jpg',
+    '/images/img5.jpg',
+    '/images/img6.jpg',
+    '/images/img7.jpg',
+    '/images/img8.jpg',
+    '/images/img9.jpg',
+    '/images/img10.jpg',
+  ]
 
   useGSAP(function() {
 
     gsap.to(imageDivRef.current,{
       scrollTrigger: {
         trigger: imageDivRef.current,
-        markers: true,
         start: 'top 38%',
-        end: 'top -100%',
-        scrub: 1,
+        end: 'top -75%',
+        markers: true,
         pin: true,
+        delay: 1,
+        onUpdate: (elem)=>{
+          let imageIndex;
+          if(elem.progress < 1) {
+            imageIndex = Math.floor(elem.progress * imageArray.length)
+          }else{
+            imageIndex = imageArray.length-1
+          }
+          
+          imageRef.current.src = imageArray[imageIndex]
+          console.log(imageIndex)
+        }
       }
     })
   })
@@ -25,11 +50,11 @@ const About = () => {
   return (
     <div>
       <div className='section1 py-1'>
-      <div ref={imageDivRef} className='absolute overflow-hidden lg:h-[20vw] h-[30vw] lg:w-[15vw] w-[25vw] lg:rounded-3xl rounded-xl lg:top-87 top-87 lg:left-[30vw] left-[30vw] '>
-        <img className='h-full w-full object-cover' src="/images/img1.jpg" alt="image" />
+      <div ref={imageDivRef} className='absolute overflow-hidden lg:h-[20vw] h-[30vw] lg:w-[15vw] w-[25vw] lg:rounded-3xl rounded-xl lg:top-87 -top-45 lg:left-[30vw] left-[30vw] '>
+        <img ref={imageRef} className='h-full w-full object-cover' src="/images/img1.jpg" alt="image" />
       </div>
       <div className='relative'>
-      <div className='lg:mt-[35vw] mt-[60vw] font-[font3]'>
+      <div className='lg:mt-[30vw] mt-[55vw] font-[font3]'>
         <h1 className='text-[20vw] uppercase leading-[19vw] text-center'>
           Vishal<br/>Thakur
         </h1>
