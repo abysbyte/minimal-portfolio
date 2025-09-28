@@ -1,18 +1,54 @@
-# React + Vite
+# Minimal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website. Built with cutting-edge web technologies to deliver a seamless and visually engaging user experience.
 
-#Deployed on versel
-## Check live Project, still working on it  -
-https://vishalthakur-eight-coral.vercel.app/
+## 🚀 Live Demo
+
+Check out the live project: https://vishalthakur-eight-coral.vercel.app/
+
+## ✨ Features
+
+- **Responsive Design**: Optimized for all devices with mobile-first approach
+- **Smooth Animations**: Powered by GSAP for fluid transitions and interactions
+- **Video Background**: Dynamic video elements on the home page
+- **Interactive Navigation**: Hover effects and smooth scrolling
+- **About Section**: Animated image gallery with scroll-triggered animations
+- **Projects Showcase**: Dedicated section for displaying work (under development)
+- **Custom Fonts**: Unique typography using custom font files
+- **Fast Performance**: Built with Vite for lightning-fast development and builds
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework**: React 19
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS 4
+- **Animations**: GSAP (GreenSock Animation Platform)
+- **Routing**: React Router DOM
+- **Deployment**: Vercel
+
+## 📱 Pages
+
+- **Home**: Hero section with video background and call-to-action buttons
+- **About**: Personal bio with animated image gallery
+- **Projects**: Showcase of development and design projects (coming soon)
+
+## 🎨 Assets
+
+- Custom fonts: Motterdam, Poppins, Shabania
+- Images: Background and portfolio images
+- Videos: Background videos for dynamic content
 
 
+## 📄 License
 
-Currently, two official plugins are available:
+This project is open source and available under the [MIT License](LICENSE).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👨‍💻 Author
 
-## Expanding the ESLint configuration
+**Vishal Thakur**
+- LinkedIn: www.linkedin.com/in/abyssbyte
+- Email: vthakur464215@gmail.com
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+*Note: This project is continuously being updated with new features and projects.*

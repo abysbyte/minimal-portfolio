@@ -27,13 +27,12 @@ const About = () => {
     gsap.to(imageDivRef.current,{
       scrollTrigger: {
         trigger: imageDivRef.current,
-        start: 'top 25%',
-        end: 'top -75%',
+        start: 'top 28%',
+        end: 'top -70%',
         pin: true,
         pinSpacing:true,
         pinReparent: true,
         pinType: 'transform',
-        scrub: 1,
         anticipatePin: 1,
         invalidateOnRefresh: true,
         markers: true,
@@ -55,7 +54,7 @@ const About = () => {
   return (
     <div>
       <div className='section1 py-1'>
-      <div ref={imageDivRef} className='absolute overflow-hidden lg:h-[20vw] h-[30vw] lg:w-[15vw] w-[25vw] lg:rounded-3xl rounded-xl lg:top-96 top-80 lg:left-[30vw] left-[30vw] bg-red-500'>
+      <div ref={imageDivRef} className='absolute overflow-hidden lg:h-[20vw] h-[30vw] lg:w-[15vw] w-[25vw] lg:rounded-3xl rounded-xl lg:top-86 top-50 lg:left-[30vw] left-[30vw] bg-red-500'>
         <img ref={imageRef} className='h-full w-full object-cover' src="/images/img1.jpg" alt="image" />
       </div>
       <div className='relative'>
